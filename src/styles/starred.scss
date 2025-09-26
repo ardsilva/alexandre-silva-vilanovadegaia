@@ -1,28 +1,41 @@
 .starred {
-  
-    footer {
-        margin-top: 50px;
+	.starred-movies {
+		.row {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			gap: 2rem;
+			padding: 2rem;
 
-        .total-price {
-            font-size: 1.8rem;
-        }
+			@media (max-width: 768px) {
+				grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+				gap: 1rem;
+				padding: 1rem;
+			}
+		}
+	}
 
-        .btn {
-            width: auto;
-            padding: 0 20px;                   
-            font-size: 0.8rem;
-            background: red;
-            border: none;
-        }
+	footer {
+		margin-top: 50px;
 
-        .back-button {
-            color: #000;
-            background: #efefef;
-        }
+		.total-price {
+			font-size: 1.8rem;
+		}
 
-        .back-button:hover {
-            background: #dedede;
-        }
-    }
+		.btn {
+			width: auto;
+			padding: 0 20px;
+			font-size: 0.8rem;
+			background: red;
+			border: none;
+		}
+
+		.back-button {
+			color: #000;
+			background: #efefef;
+		}
+
+		.back-button:hover {
+			background: #dedede;
+		}
+	}
 }
-  
